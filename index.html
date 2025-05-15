@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prevalence Predictor</title>
+</head>
+<body>
+    <h2>Enter Input Data</h2>
+    <form action="/predict" method="post">
+        <label>Avg Daily Sugar Intake:</label>
+        <input type="text" name="avg_sugar"><br><br>
+
+        <label>Per Capita Sugar Consumption:</label>
+        <input type="text" name="per_capita"><br><br>
+
+        <label>Total Sugar Consumption:</label>
+        <input type="text" name="total_sugar"><br><br>
+
+        <label>Sugar Import/Export Ratio:</label>
+        <input type="text" name="import_export_ratio"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
